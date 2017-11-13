@@ -1,0 +1,13 @@
+PShape imagem;
+
+void setup() {
+  size(640, 360);
+  // Troca o "nomedaimagem" pela real
+  imagem = loadShape("nomedaimagem.svg");
+} 
+
+void draw(){
+  background(102);
+  shape(iamgem, 110, 90, 100, 100);  // Draw at coordinate (110, 90) at size 100 x 100
+  shape(imagem, 280, 40);            // Draw at coordinate (280, 40) at the default size
+}
